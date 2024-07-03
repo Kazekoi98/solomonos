@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#profiles {
+    margin-top: 20px;
+}
+
+.profile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    margin-top: 0;
+}
+
+.profile a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.profile a:hover {
+    text-decoration: underline;
+}
