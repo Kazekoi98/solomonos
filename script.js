@@ -1,4 +1,3 @@
-// Datos de los perfiles de jugadores
 const players = [
     {
         name: "marcos306#euw",
@@ -17,23 +16,18 @@ const players = [
     }
 ];
 
-// Función para mostrar los perfiles en la página
 function displayProfiles() {
-    const profilesSection = document.getElementById('profiles');
-
+    const profilesContainer = document.getElementById('player-profiles');
     players.forEach(player => {
         const profileDiv = document.createElement('div');
-        profileDiv.classList.add('profile');
-
+        profileDiv.className = 'profile';
         profileDiv.innerHTML = `
             <h2>${player.name}</h2>
-            <p>Elo: ${player.elo}</p>
+            <p>ELO: ${player.elo}</p>
             <a href="${player.opggLink}" target="_blank">Ver perfil en OP.GG</a>
         `;
-
-        profilesSection.appendChild(profileDiv);
+        profilesContainer.appendChild(profileDiv);
     });
 }
 
-// Llamar a la función para mostrar los perfiles al cargar la página
-window.addEventListener('load', displayProfiles);
+window.onload = displayProfi
