@@ -1,53 +1,87 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333;
+    background-color: #1a202c;
+    padding: 20px;
     color: white;
     text-align: center;
-    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 15px;
+}
+
+h1 {
+    margin: 0;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-#profiles {
-    margin-top: 20px;
+.profiles {
+    width: 100%;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
 .profile {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: white;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.profile:last-child {
+    border-bottom: none;
 }
 
 .profile h2 {
-    margin-top: 0;
     color: #333;
+    margin: 0 0 10px;
+}
+
+.profile p {
+    color: #555;
+    margin: 0 0 10px;
 }
 
 .profile a {
-    color: #007bff;
+    color: #0066cc;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .profile a:hover {
     text-decoration: underline;
 }
 
-.elo {
+footer {
     text-align: center;
-    margin-top: 20px;
-}
-
-.elo img {
-    width: 100px;
+    padding: 10px 20px;
+    background-color: #1a202c;
+    color: white;
 }
