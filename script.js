@@ -30,4 +30,4 @@ function displayProfiles() {
     });
 }
 
-window.onload = displayProfi
+window.onload = displayProfiles;
